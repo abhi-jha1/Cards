@@ -85,7 +85,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='credit-card'>
+      <span >
 
         <form style={{ textAlign: "center" }}>
           <h3>Card Number*</h3>
@@ -93,14 +93,14 @@ class App extends React.Component {
           <input className='input' type="text" pattern="[0-9]*" name="input2" ref='input2' maxLength="4" onInput={this.validate2} value={this.state.value2} placeHolder='****' />
           <input className='input' type="text" pattern="[0-9]*" name="input3" ref='input3' maxLength="4" onInput={this.validate3} value={this.state.value3} placeHolder='****' />
           <input className='input' type="text" pattern="[0-9]*" name="input4" ref='input4' maxLength="4" onInput={this.validate4} value={this.state.value4} placeHolder='****' />
-          <input className="input1" type="text" pattern="[0-9]*" name="input5" ref="input5" placeHolder="MM / YY" maxLength='4' onInput={this.validate5} value={this.state.value5} />
+          <br /> <input className="input1" type="text" pattern="[0-9]*" name="input5" ref="input5" placeHolder="MM / YY" maxLength='4' onInput={this.validate5} value={this.state.value5} />
           <input className="input" type="text" pattern="[0-9]*" name="input6" ref="input6" placeHolder='cvv' pattern="[0-9]*" onInput={this.validate6} value={this.state.value6} maxLength='3' />
 
 
 
 
         </form>
-      </div>
+      </span>
     );
   }
 }
